@@ -119,7 +119,7 @@ public class Homework06 {
 
             System.out.println(Arrays.toString(objects));
 
-            for (String object: objects){
+            for (String object : objects) {
                 if (Character.isUpperCase(object.charAt(0))) upperCase++;
                 if (Character.isLowerCase(object.charAt(0))) lowerCase++;
                 if (object.toLowerCase().charAt(0) == 'p' || object.toLowerCase().charAt(0) == 'b') bOrP++;
@@ -136,7 +136,6 @@ public class Homework06 {
 
             System.out.println(Arrays.toString(nums));
 
-            int elements = 0;
             int elementsM10 = 0;
             int elementsL10 = 0;
             int elementsAre10 = 0;
@@ -157,22 +156,21 @@ public class Homework06 {
             System.out.println("Elements that are 10 = " + elementsAre10++);
 
             System.out.println("        TASK 11        ");
-            num11 = new int[]{5, 8, 13, 1, 2};
-            num12 = new int[]{9, 3, 67, 1, 0};
-        } ;
 
-        System.out.println("1st array is = " + Arrays.toString(num11));
-        System.out.println(Arrays.toString(num12));
+            int[] digits = {5, 8, 13, 1, 2};
+            System.out.println("1st array is = " + Arrays.toString(digits));
+            int[] digits1 = {9, 3, 67, 1, 0};
+            System.out.println("2nd array is = " + Arrays.toString(digits1));
 
-        int[] maxNumbers = new int[5];
+            int[] maxNumbers = new int[5];
 
-        maxNumbers[0] = Math.max(num11[0], num12[0]);
-        maxNumbers[1] = Math.max(num11[1], num12[1]);
-        maxNumbers[2] = Math.max(num11[2], num12[2]);
-        maxNumbers[3] = Math.max(num11[3], num12[3]);
-        maxNumbers[4] = Math.max(num11[4], num12[4]);
+            for (int i = 0; i < maxNumbers.length; i++) {
+                maxNumbers[i] = Math.max(digits[i], digits1[i]);
 
-        System.out.println(Arrays.toString(maxNumbers));
-    }
+
+                System.out.println("3rd array is = " + Arrays.toString(maxNumbers));
+
+            }
         }
-
+    }
+    }

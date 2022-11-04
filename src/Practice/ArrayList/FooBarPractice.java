@@ -1,2 +1,10 @@
-package Practice.ArrayList;public class FooBarPractice {
+package Practice.ArrayList;
+
+public class FooBarPractice {
+
+    public static void main(String[] args) {
+
+
+
+    }
 }

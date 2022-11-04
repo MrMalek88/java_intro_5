@@ -1,2 +1,7 @@
-package arrays;public class MultiDimensionalArrays {
-}
+package arrays;
+
+import java.util.Arrays;
+
+public class MultiDimensionalArrays {};
+
+

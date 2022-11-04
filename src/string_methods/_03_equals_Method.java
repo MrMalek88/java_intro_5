@@ -11,5 +11,7 @@ public class _03_equals_Method {
         boolean b1 = s1.equals(s2);
 
         System.out.println(b1);
+
+      System.out.println(s1.substring(s1.length() / 2 - 1, s1.length() / 2 + 1) );
     }
 }

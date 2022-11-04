@@ -163,6 +163,7 @@ public class Project04 {
                 for (int i = word.length()-1; i >= 0 ; i--) {
                     pali += word.charAt(i);
                 } if (pali.toLowerCase().equals(word.toLowerCase())) {
+
                     System.out.println("This word is a Palindrome");
                 }else {
                     System.out.println("This word is not a Palindrome");
@@ -185,13 +186,6 @@ public class Project04 {
 
                 }
                 System.out.println("This sentence has " + countA + " a or A letters.");
-
-
-
-
-
-
-
 
             }
 
