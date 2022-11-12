@@ -49,6 +49,8 @@ public class Homework06 {
 
         int[] num11 = new int[0];
         int[] num12 = new int[0];
+
+
         for (String dogName : dogNames) {
             if (dogNames.equals("Pluto")) {
                 hasPluto = true;
@@ -109,7 +111,7 @@ public class Homework06 {
 
             System.out.println("        TASK 9        ");
 
-            String[] objects = {"Pen", "notebook", "Book", "bag", "pencil", "Ruler" };
+            String[] objects = {"Pen", "notebook", "Book", "bag", "paper", "pencil", "Ruler" };
 
             System.out.println(Arrays.toString(objects));
             int upperCase = 0;
@@ -121,7 +123,7 @@ public class Homework06 {
 
             for (String object : objects) {
                 if (Character.isUpperCase(object.charAt(0))) upperCase++;
-                if (Character.isLowerCase(object.charAt(0))) lowerCase++;
+                else if (Character.isLowerCase(object.charAt(0))) lowerCase++;
                 if (object.toLowerCase().charAt(0) == 'p' || object.toLowerCase().charAt(0) == 'b') bOrP++;
                 if (object.toLowerCase().contains("book") || object.toLowerCase().contains("pen")) bookOrPen++;
             }

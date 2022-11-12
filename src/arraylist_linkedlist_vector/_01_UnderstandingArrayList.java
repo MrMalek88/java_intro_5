@@ -30,6 +30,7 @@ public class _01_UnderstandingArrayList {
 
         System.out.println(Arrays.toString(names1));
         System.out.println(names2);
+        System.out.println();
 
         //TASK ADD ALI ANDRII TO ARRAY
 
