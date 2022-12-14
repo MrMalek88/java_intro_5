@@ -16,9 +16,9 @@ public class Homework12 {
         String str2 = "JAVA";
         System.out.println(noVowel(str2));
 
-//        System.out.println("\n------TASK THREE------\n");
-//        String str3 = "John's age is 29";
-//        System.out.println(sumOfDigits(str3));
+        System.out.println("\n------TASK THREE------\n");
+       String str3 = "John's age is 29";
+       System.out.println(sumOfDigits(str3));
 
         System.out.println("\n------TASK FOUR------\n");
         String str4 = "JOHN";
@@ -36,10 +36,9 @@ public class Homework12 {
         int[] array7 = {1,2,3,4};
         System.out.println(Arrays.toString(arrFactorial(array7)));
 
-//        System.out.println("\n------TASK EIGHT------\n");
-//        String str8 = "abc123$#%";
-//        System.out.println(Arrays.toString(categorizeCharacters(str8)));
 
+        System.out.println("\n-------------Task 8-------------\n");
+        System.out.println(Arrays.toString(categorizeCharacters("abc123$#%")));
 
     }
 
@@ -50,11 +49,14 @@ public class Homework12 {
     public static String noVowel(String str){
         return str.replaceAll("[aeiouAEIOU]", "");
     }
-
-    //fix
-   //public static int sumOfDigits(String str){
-        //return -1;
- //}
+    public static int sumOfDigits(String str) {
+        int sum = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (Character.isDigit(str.charAt(i)))
+                sum += Integer.parseInt(str.charAt(i) + "");
+        }
+        return sum;
+    }
 
     public static boolean hasUpperCase(String str){
         Pattern pattern = Pattern.compile("[A-Z]");
@@ -84,9 +86,15 @@ public class Homework12 {
         }
         return array;
     }
+    public static String[] categorizeCharacters(String str) {
 
-//    public static String[] categorizeCharacters(String str){
-//    }
+        String[] categorized = {"", "", ""};
+        for (char character : str.toCharArray()) {
+            if (Character.isLetter(character)) categorized[0] += character + "";
+            else if (Character.isDigit(character)) categorized[1] += character + "";
+            else categorized[2] += character + "";
+        }
+        return categorized;
 
-
+    }
 }
