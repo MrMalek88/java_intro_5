@@ -1,20 +1,25 @@
 package collections;
 
-import java.util.LinkedHashSet;
+import java.util.*;
 
 public class practice01_RemoveDuplicates {
-
     public static void main(String[] args) {
-        LinkedHashSet<Integer> numbers = new LinkedHashSet<>();
+        System.out.println(Arrays.toString(removeDuplicates(new Integer[]{-5, 10, -5, 10, 1, 2, 5})));
+        System.out.println(Arrays.toString(removeDuplicates(new Integer[]{-5, 10, 1, 2, 5})));
+        System.out.println(Arrays.toString(removeDuplicates(new Integer[]{})));
+    }
 
-        numbers.add(-5);
-        numbers.add(10);
-        numbers.add(-5);
-        numbers.add(10);
-        numbers.add(1);
-        numbers.add(2);
-        numbers.add(5);
 
-        System.out.println(numbers);
+
+    /*
+    Create a method that takes an array of numbers below
+    -5, 10, -5, 10, 1, 2, 5
+    Remove all duplicates and return a new array
+    [-5, 1, 2, 5, 10]
+     */
+
+    public static Integer[] removeDuplicates(Integer[] arr){
+        return new LinkedHashSet<>(Arrays.asList(arr)).toArray(new Integer[0]);
+        // Integer array -> Integer List -> LinkedHashSet -> Object array -> Integer array
     }
 }
