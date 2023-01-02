@@ -14,7 +14,7 @@ public class practice01_RemoveDuplicates {
     /*
     Create a method that takes an array of numbers below
     -5, 10, -5, 10, 1, 2, 5
-    Remove all duplicates and return a new array
+    Remove all duplicates and return a new array in order
     [-5, 1, 2, 5, 10]
      */
 
@@ -23,3 +23,19 @@ public class practice01_RemoveDuplicates {
         // Integer array -> Integer List -> LinkedHashSet -> Object array -> Integer array
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
